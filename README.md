@@ -9,7 +9,7 @@ The user has 10 seconds to “create a path” by waving the device around and m
 ### Data Transmission
 Tessel’s accelerometer outputs data as a series of arrays representing the hardware’s acceleration at each axis (X, Y and Z):
 
-<img src="http://i.imgur.com/hDDFxnU.png">
+<img src="http://i.imgur.com/hDDFxnU.png" height="200px" width="150px">
 
 The initial goal was to stream the data in real-time, but the Tessel’s limited processor could not handle sending multiple requests per second and caused significant lag. In fear of overheating the device, we decided to save the data for 10 seconds before sending it as a bundled, multi-dimensional array. 
 
